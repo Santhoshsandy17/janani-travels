@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Janani Travels</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Janani Travels Logo" class="logo" />
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#booking">Booking</a>
+      <a href="#inquiry">Inquiry</a>
+      <a href="#feedback">Feedback</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <section id="home" class="hero">
+    <h1>Explore India with Janani Travels</h1>
+    <p>Reliable & Comfortable Travel Solutions Across India</p>
+    <a href="#booking" class="btn">Book Now</a>
+  </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Janani Travels, managed by E. Manivannan, provides trusted travel services throughout India. With over 10 years of experience, we ensure safe, comfortable, and personalized journeys for individuals, families.</p>
+  </section>
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Local & Outstation Travel</li>
+      <li>Temple Tours & Sightseeing Packages</li>
+      <li>AC/Non-AC Cars, Vans & Buses</li>
+      <li>Customized Travel Solutions</li>
+    </ul>
+  </section>
+  <section id="gallery">
+    <h2>Our Vehicles</h2>
+    <div class="gallery slider">
+      <img src="vehicle1.jpg" alt="Vehicle 1">
+      <img src="vehicle2.jpg" alt="Vehicle 2">
+      <img src="vehicle3.jpg" alt="Vehicle 3">
+      <img src="vehicle4.jpg" alt="Vehicle 4">
+      <img src="vehicle5.jpg" alt="Vehicle 5">
+    </div>
+  </section>
+  <section id="booking" class="form-section">
+    <h2>Booking Form</h2>
+    <form action="https://formspree.io/f/xdoqqwbw" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="text" name="pickup" placeholder="Pickup Location" required>
+      <input type="text" name="drop" placeholder="Drop Location" required>
+      <input type="date" name="date" required>
+      <input type="time" name="time" required>
+      <button type="submit">Submit Booking</button>
+    </form>
+  </section>
+  <section id="inquiry" class="form-section">
+    <h2>Travel Inquiry</h2>
+    <form action="https://formspree.io/f/xdoqqwbw" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <textarea name="message" placeholder="Describe your travel needs..." rows="5" required></textarea>
+      <button type="submit">Send Inquiry</button>
+    </form>
+  </section>
+  <section id="feedback" class="form-section">
+    <h2>Feedback</h2>
+    <form action="https://formspree.io/f/xdoqqwbw" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <textarea name="feedback" placeholder="Your Feedback" rows="5" required></textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Manager:</strong> E. Manivannan</p>
+    <p><strong>Phone:</strong> <a href="tel:+919884035152">+91 98840 35152</a></p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/919884035152" target="_blank">Chat Now</a></p>
+      </section>
+
+<section id="location">
+  <h2>Our Location</h2>
+  <iframe src="https://www.google.com/maps?q=Chrompet,+Chennai&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+  <footer>
+    <p>© 2025 Janani Travels. All rights reserved.</p>
+  </footer>
+
+<div id="chat-icon" onclick="toggleChat()">💬</div>
+<div id="chat-box" style="display: none;">
+  <div class="chat-header">Janani Assistant</div>
+  <div class="chat-body">Hi! How can I help you today?</div>
+  <input type="text" placeholder="Type a message..." />
+</div>
+<script>
+  function toggleChat() {
+    const box = document.getElementById("chat-box");
+    box.style.display = box.style.display === "none" ? "block" : "none";
+  }
+</script>
+
+</body>
+</html>
